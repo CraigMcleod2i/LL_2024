@@ -1,0 +1,33 @@
+/* src/components/DustMotes.css */
+#dust-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10000;
+  }
+  
+  .dust-mote {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #f0f0f025; /* Dust color */
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    animation: floatAnimation linear infinite;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 1;
+    }
+    80% {
+        opacity: 0.9;
+    }
+    100% {
+      transform: translateY(0vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
