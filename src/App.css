@@ -233,9 +233,7 @@ header{
   transition: ease all 0.3s;
   pointer-events: auto;
   }
-main:hover {
-  color: rgb(0, 255, 191) !important;
-}
+
 header:hover {
   box-shadow: 0 0 3px 3px white;
   transform: translate(1.3rem, 1.3rem);
@@ -307,21 +305,36 @@ header p {
   text-align: justify;
   color: white;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 #blurb p {
-  width: 50%;
-  transform: translate(90%);
+  width: 100%;
   font-weight: 500;
   font-size: large;
   background-color: rgba(255, 255, 255, 0.103);
   box-shadow: 0.4rem 0.4rem 0px 1px white;
   padding: 1rem;
   outline: 3px solid rgb(59, 87, 110);
+  margin:0.65rem 3rem;
+  box-sizing: border-box;
+  margin-right: 3rem;
 }
 #blurb img {
-  height: 60%;
-  transform: translate(20%);
-  position: absolute;
+  margin: auto;
+  width: 60%;
+  min-width: 275px;
 }
 footer {
   width: 100%;

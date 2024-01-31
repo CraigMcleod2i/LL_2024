@@ -464,6 +464,7 @@ function App() {
       </main>
       <section ref={refMotivation} id="blurb">
         <img src={logo} />
+        <div className="flex-column">
         <p>
           In engineering, we love to get technical. Whether it’s building
           automated test frameworks, developing new testing products like
@@ -485,6 +486,7 @@ function App() {
           details. If anything in any of the videos piques your interest, please
           feel free to reach out!
         </p>
+        </div>
       </section>
       <section ref={refLearn} id="lunch-and-learns">
         {/* <span className="arrow" id='left-arrow' onClick={moveLeft}>
